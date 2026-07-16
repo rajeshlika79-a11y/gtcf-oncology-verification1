@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "gtcf-oncology-verificationrj"
+name = "ggtcf-oncology-verification-rj"
 version = "0.1.2"
 authors = [{name = "Rajesh Kumar"}]
 description = "Computational verification pipeline for GTCF-Onc"
