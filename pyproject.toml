@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gtcf-oncology-verificationrj"
+version = "0.1.2"
+authors = [{name = "Rajesh Kumar"}]
+description = "Computational verification pipeline for GTCF-Onc"
+readme = "README.md"
+requires-python = ">=3.7"
