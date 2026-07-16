@@ -36,4 +36,14 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest
+        pytest 
+        publish:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write  # Mandatory for Trusted Publishers
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and publish
+        uses: pypa/gh-action-pypi-publish@release/v1
+        
