@@ -37,13 +37,4 @@ jobs:
     - name: Test with pytest
       run: |
         pytest 
-        publish:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      id-token: write  # Mandatory for Trusted Publishers
-    steps:
-      - uses: actions/checkout@v4
-      - name: Build and publish
-        uses: pypa/gh-action-pypi-publish@release/v1
-        
+      
