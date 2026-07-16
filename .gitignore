@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+data/4OBE/4OBE.pdb
+data/5VQ6/
+data/143D/
+data/1KF1/
+*.egg-info/
+.DS_Store
